@@ -180,67 +180,167 @@ export const skillsData = {
     label: "Languages",
     labelVi: "Ngôn Ngữ",
     items: [
-      { name: "JavaScript", desc: "Core language utilized across fullstack development from Next.js to Node.js backend pipelines." },
-      { name: "TypeScript", desc: "Enforced type-safety and robust interfaces across complex gRPC microservices and enterprise codebases." }
+      { 
+        name: "JavaScript", 
+        desc: "Core language utilized across fullstack development from Next.js to Node.js backend pipelines.",
+        descVi: "Ngôn ngữ cốt lõi được sử dụng xuyên suốt quá trình phát triển fullstack từ Next.js đến các đường ống xử lý backend Node.js."
+      },
+      { 
+        name: "TypeScript", 
+        desc: "Enforced type-safety and robust interfaces across complex gRPC microservices and enterprise codebases.",
+        descVi: "Tăng cường an toàn kiểu (type-safety) và xây dựng giao diện lập trình mạnh mẽ trên các microservices gRPC và mã nguồn doanh nghiệp."
+      }
     ]
   },
   frontend: {
     label: "Front-end",
     labelVi: "Front-end",
     items: [
-      { name: "ReactJS", desc: "Engineered responsive, highly stateful interfaces and custom user hooks for reactive layouts." },
-      { name: "NextJS", desc: "Implemented Server-Side Rendering (SSR) and dynamic generation for performance and optimal SEO rankings." },
-      { name: "Bootstrap", desc: "Structured rapid, clean grids and responsive styling wrappers across legacy and modern platforms." },
-      { name: "ASP.NET MVC", desc: "Maintained robust, structured enterprise web applications using standard MVC design patterns." }
+      { 
+        name: "ReactJS", 
+        desc: "Engineered responsive, highly stateful interfaces and custom user hooks for reactive layouts.",
+        descVi: "Thiết kế các giao diện phản hồi nhanh, quản lý trạng thái phức tạp và xây dựng các hook tùy biến cho bố cục web động."
+      },
+      { 
+        name: "NextJS", 
+        desc: "Implemented Server-Side Rendering (SSR) and dynamic generation for performance and optimal SEO rankings.",
+        descVi: "Triển khai Server-Side Rendering (SSR) và tối ưu hóa kết xuất trang động giúp nâng cao hiệu năng và thứ hạng SEO."
+      },
+      { 
+        name: "Bootstrap", 
+        desc: "Structured rapid, clean grids and responsive styling wrappers across legacy and modern platforms.",
+        descVi: "Xây dựng nhanh chóng các hệ thống lưới sạch sẽ và các lớp bọc định dạng responsive trên các nền tảng cũ và hiện đại."
+      },
+      { 
+        name: "ASP.NET MVC", 
+        desc: "Maintained robust, structured enterprise web applications using standard MVC design patterns.",
+        descVi: "Bảo trì các ứng dụng web doanh nghiệp cấu trúc chặt chẽ và mạnh mẽ sử dụng mô hình thiết kế MVC tiêu chuẩn."
+      }
     ]
   },
   backend: {
     label: "Back-end",
     labelVi: "Back-end",
     items: [
-      { name: "NodeJS", desc: "Built performant, non-blocking asynchronous event loop servers handling high concurrency loads." },
-      { name: "ExpressJS", desc: "Engineered light, robust RESTful APIs with organized route handling and security middlewares." },
-      { name: "MoleculerJS", desc: "Designed decentralized microservice architectures with self-healing, load-balancing brokers." },
-      { name: "gRPC", desc: "Implemented high-speed, binary-serialized microservice inter-communications utilizing Protocol Buffers." }
+      { 
+        name: "NodeJS", 
+        desc: "Built performant, non-blocking asynchronous event loop servers handling high concurrency loads.",
+        descVi: "Xây dựng các máy chủ vòng lặp sự kiện bất đồng bộ không chặn (non-blocking) hiệu năng cao, xử lý lưu lượng đồng thời lớn."
+      },
+      { 
+        name: "ExpressJS", 
+        desc: "Engineered light, robust RESTful APIs with organized route handling and security middlewares.",
+        descVi: "Phát triển các RESTful APIs gọn nhẹ, mạnh mẽ với cơ chế định tuyến khoa học và các middleware bảo mật."
+      },
+      { 
+        name: "MoleculerJS", 
+        desc: "Designed decentralized microservice architectures with self-healing, load-balancing brokers.",
+        descVi: "Thiết kế kiến trúc microservices phi tập trung với khả năng tự phục hồi và các broker cân bằng tải tự động."
+      },
+      { 
+        name: "gRPC", 
+        desc: "Implemented high-speed, binary-serialized microservice inter-communications utilizing Protocol Buffers.",
+        descVi: "Thiết kế truyền thông microservices tốc độ cao thông qua nhị phân hóa (protobuf) giúp tối ưu hóa giao dịch mạng nội bộ."
+      }
     ]
   },
   databases: {
     label: "Databases & Messaging",
     labelVi: "Cơ Sở Dữ Liệu & Tin Nhắn",
     items: [
-      { name: "MongoDB", desc: "Designed complex data models, aggregations, and custom indexes to manage 100M+ high-throughput records." },
-      { name: "Redis", desc: "Deployed distributed in-memory cache layers to accelerate hot query responses and session management." },
-      { name: "Kafka", desc: "Established event-driven message brokers to decouple data pipelines and camera trigger events." }
+      { 
+        name: "MongoDB", 
+        desc: "Designed complex data models, aggregations, and custom indexes to manage 100M+ high-throughput records.",
+        descVi: "Thiết kế mô hình dữ liệu phức tạp, truy vấn tổng hợp (aggregations) và chỉ mục tối ưu để quản lý hơn 100 triệu bản ghi lưu lượng lớn."
+      },
+      { 
+        name: "Redis", 
+        desc: "Deployed distributed in-memory cache layers to accelerate hot query responses and session management.",
+        descVi: "Triển khai các lớp bộ nhớ đệm phân tán (in-memory cache) để tăng tốc phản hồi truy vấn thường xuyên và quản lý phiên làm việc."
+      },
+      { 
+        name: "Kafka", 
+        desc: "Established event-driven message brokers to decouple data pipelines and camera trigger events.",
+        descVi: "Xây dựng hệ thống môi giới thông điệp hướng sự kiện (event-driven) để tách biệt các đường ống dữ liệu và sự kiện kích hoạt camera."
+      }
     ]
   },
   devops: {
     label: "DevOps & Cloud",
     labelVi: "DevOps & Điện Toán Đám Mây",
     items: [
-      { name: "Docker", desc: "Containerized fullstack services ensuring unified dev-to-prod build pipelines and isolated runtime environments." },
-      { name: "MinIO", desc: "Configured local private high-performance S3-compatible object storage for massive video recording storage." },
-      { name: "Wasabi", desc: "Integrated cost-effective, high-speed offsite cloud S3 storage for durable surveillance footage archives." }
+      { 
+        name: "Docker", 
+        desc: "Containerized fullstack services ensuring unified dev-to-prod build pipelines and isolated runtime environments.",
+        descVi: "Đóng gói container các dịch vụ fullstack đảm bảo quy trình build đồng bộ từ môi trường phát triển lên sản xuất và cô lập runtime."
+      },
+      { 
+        name: "MinIO", 
+        desc: "Configured local private high-performance S3-compatible object storage for massive video recording storage.",
+        descVi: "Cấu hình kho lưu trữ đối tượng tương thích S3 hiệu năng cao tại chỗ để lưu trữ các khối dữ liệu video camera khổng lồ."
+      },
+      { 
+        name: "Wasabi", 
+        desc: "Integrated cost-effective, high-speed offsite cloud S3 storage for durable surveillance footage archives.",
+        descVi: "Tích hợp kho lưu trữ đám mây Wasabi S3 tốc độ cao, tối ưu chi phí để lưu trữ bền vững các tệp video giám sát lâu dài."
+      }
     ]
   },
   video: {
     label: "Video & Streaming Systems",
     labelVi: "Hệ Thống Video & Truyền Dẫn",
     items: [
-      { name: "FFmpeg", desc: "Transcoded, scaled, and muxed real-time surveillance streams into web-friendly formats." },
-      { name: "RTSP", desc: "Ingested high-definition raw network camera feeds directly from field ONVIF devices." },
-      { name: "HLS", desc: "Segmented video feeds into HTTP Live Streaming packets for reliable browser video delivery." },
-      { name: "WebRTC", desc: "Implemented ultra-low-latency real-time video playback for live security operations (<500ms)." },
-      { name: "ONVIF PTZ", desc: "Programmed programmatic PTZ controls to remotely pan, tilt, and zoom hardware camera lenses." },
-      { name: "Go2RTC", desc: "Deployed multi-stream RTSP/WebRTC gateways to aggregate cameras and distribute streams efficiently." }
+      { 
+        name: "FFmpeg", 
+        desc: "Transcoded, scaled, and muxed real-time surveillance streams into web-friendly formats.",
+        descVi: "Chuyển mã (transcode), co giãn tỷ lệ và ghép luồng (mux) video giám sát thời gian thực thành các định dạng tương thích tốt trên web."
+      },
+      { 
+        name: "RTSP", 
+        desc: "Ingested high-definition raw network camera feeds directly from field ONVIF devices.",
+        descVi: "Thu nhận và xử lý luồng video thô độ phân giải cao trực tiếp từ các thiết bị camera mạng ONVIF thực tế."
+      },
+      { 
+        name: "HLS", 
+        desc: "Segmented video feeds into HTTP Live Streaming packets for reliable browser video delivery.",
+        descVi: "Phân đoạn luồng video thành các gói HTTP Live Streaming (HLS) để truyền tải video mượt mà, tin cậy trên trình duyệt."
+      },
+      { 
+        name: "WebRTC", 
+        desc: "Implemented ultra-low-latency real-time video playback for live security operations (<500ms).",
+        descVi: "Triển khai trình phát video thời gian thực độ trễ cực thấp (<500ms) phục vụ cho các tác vụ vận hành giám sát trực tiếp."
+      },
+      { 
+        name: "ONVIF PTZ", 
+        desc: "Programmed programmatic PTZ controls to remotely pan, tilt, and zoom hardware camera lenses.",
+        descVi: "Lập trình điều khiển xoay, nghiêng và thu phóng (PTZ) từ xa của ống kính camera phần cứng thông qua giao thức ONVIF."
+      },
+      { 
+        name: "Go2RTC", 
+        desc: "Deployed multi-stream RTSP/WebRTC gateways to aggregate cameras and distribute streams efficiently.",
+        descVi: "Triển khai cổng kết nối đa luồng RTSP/WebRTC để hội tụ các camera và phân phối luồng stream hiệu quả."
+      }
     ]
   },
   ai: {
     label: "AI Productivity",
     labelVi: "Công Cụ Năng Suất AI",
     items: [
-      { name: "ChatGPT", desc: "Utilized for advanced algorithm brainstorming, deep debugging, and microservice documentation." },
-      { name: "GitHub Copilot", desc: "Integrated into daily workflows to write boilerplate, write unit tests, and double development speeds." },
-      { name: "Gemini", desc: "Leveraged to analyze complex API docs, troubleshoot low-level system calls, and structure workflow models." }
+      { 
+        name: "ChatGPT", 
+        desc: "Utilized for advanced algorithm brainstorming, deep debugging, and microservice documentation.",
+        descVi: "Sử dụng để lên ý tưởng thuật toán phức tạp, sửa lỗi sâu (deep debugging) và viết tài liệu hướng dẫn microservices."
+      },
+      { 
+        name: "GitHub Copilot", 
+        desc: "Integrated into daily workflows to write boilerplate, write unit tests, and double development speeds.",
+        descVi: "Tích hợp vào quy trình phát triển hàng ngày để viết code mẫu, viết unit tests và nhân đôi tốc độ phát triển."
+      },
+      { 
+        name: "Gemini", 
+        desc: "Leveraged to analyze complex API docs, troubleshoot low-level system calls, and structure workflow models.",
+        descVi: "Vận dụng để phân tích các tài liệu API phức tạp, xử lý sự cố hệ thống cấp thấp và chuẩn hóa mô hình quy trình công việc."
+      }
     ]
   }
 };

@@ -18,9 +18,10 @@ export default function PortfolioHome() {
   const t: TranslationDictionary = translations[locale];
 
   // Active Skill Highlight State
-  const [activeSkill, setActiveSkill] = useState<{ name: string; desc: string } | null>({
+  const [activeSkill, setActiveSkill] = useState<{ name: string; desc: string; descVi?: string } | null>({
     name: "gRPC & WebRTC",
-    desc: "Leveraged for ultra-low latency internal microservice APIs and real-time surveillance streaming (under 500ms)."
+    desc: "Leveraged for ultra-low latency internal microservice APIs and real-time surveillance streaming (under 500ms).",
+    descVi: "Được tích hợp để phục vụ các cuộc gọi API microservices nội bộ độ trễ cực thấp và truyền tải luồng video giám sát thời gian thực (<500ms)."
   });
 
 
@@ -350,7 +351,7 @@ export default function PortfolioHome() {
                       {activeSkill.name}
                     </h3>
                     <p className="text-secondary text-sm leading-relaxed font-light">
-                      {activeSkill.desc}
+                      {locale === "vi" && activeSkill.descVi ? activeSkill.descVi : activeSkill.desc}
                     </p>
                   </div>
                 ) : (

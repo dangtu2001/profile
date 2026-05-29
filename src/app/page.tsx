@@ -507,11 +507,6 @@ export default function PortfolioHome() {
       <footer className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-opacity-10 border-purple-500 pt-10 mt-20 text-center text-xs text-slate-500 font-mono">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p>© {new Date().getFullYear()} Nguyen Dang Tu. All rights reserved.</p>
-          <p>
-            {locale === "en"
-              ? "Designed with custom high-end Glassmorphism using Next.js 14 & Node.js 26"
-              : "Thiết kế cao cấp bằng Glassmorphism tùy biến với Next.js 14 & Node.js 26"}
-          </p>
         </div>
       </footer>
     </div>
